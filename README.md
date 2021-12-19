@@ -1,6 +1,6 @@
 # Spotify Web Player
 ## How to use
-- `npm run`
+- `npm install`
 - `npm run dev`
 
 
