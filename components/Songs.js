@@ -4,7 +4,6 @@ import Song from './Song';
 
 function Songs() {
   const playlist = useRecoilValue(playlistState);
-  console.log(playlist?.tracks?.items);
   return (
     <div>
       {playlist?.tracks?.items.map(({ track }, i) => {

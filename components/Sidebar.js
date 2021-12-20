@@ -19,9 +19,9 @@ function Sidebar() {
   const [playlists, setPlaylists] = useState([]);
   const [playlistId, setPlaylistId] = useRecoilState(playlistIdState);
 
-  console.log('You picked', playlistId);
+  // console.log('You picked', playlistId);
 
-  console.log(spotifyApi);
+  // console.log(spotifyApi);
   useEffect(() => {
     if (spotifyApi.getAccessToken()) {
       spotifyApi.getUserPlaylists().then((data) => {
@@ -30,7 +30,7 @@ function Sidebar() {
     }
   }, [session, spotifyApi]);
 
-  console.log(playlists);
+  // console.log(playlists);
   return (
     <div className="text-gray-500 p-5 text-xs lg:text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen sm:max-w-[12rem] lg:max-w-[15rem] hidden md:inline-flex pb-36">
       <div className="space-y-4">
